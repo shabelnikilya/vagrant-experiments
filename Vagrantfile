@@ -74,4 +74,5 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
 end
